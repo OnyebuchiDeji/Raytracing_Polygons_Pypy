@@ -1,0 +1,46 @@
+Raytracing_Polygons_Pypy/
+ ├── src/
+ │	├── __init__.py
+ │	├── vertex.py
+ │	├── utils.py
+ │	├── shader.py
+ │	├── programs/
+ │	├── _program.py
+ │	├── shaders/
+ │	│	├── program5.vert
+ │	│	├── program5.frag
+ │	│	├── program4b.frag
+ │	│	├── program4.vert
+ │	│	├── program4.frag
+ │	│	├── program3.vert
+ │	│	├── program3.frag
+ │	│	├── program2b.frag
+ │	│	├── program2.vert
+ │	│	├── program2.frag
+ │	│	├── program1c.frag
+ │	│	├── program1b.frag
+ │	│	├── program1.vert
+ │	│	└── program1.frag
+ │	├── program5.py
+ │	├── program4.py
+ │	├── program3.py
+ │	├── program2.py
+ │	└── program1.py
+ │	├── model_reader.py
+ │	├── model.py
+ │	├── engine.py
+ │	├── config.py
+ │	├── camera.py
+ │	├── bvh.py
+ │	└── app.py
+ ├── README.md
+ ├── models/
+ │	├── wall.obj
+ │	├── tank.obj
+ │	├── ground.obj
+ │	├── deino.obj
+ │	├── cube.obj
+ │	└── baryonx.obj
+ ├── Makefile
+ ├── .pddignore
+ └── .gitignore
