@@ -1,0 +1,63 @@
+<project_title>Raytracing Polygons - Python Moderngl by  Ebenezer Ayo, Khaylemsoft</project_title>
+
+<short_description>
+Demonstrates rendering of polygons using raytracing and the optimization using a Bounding Volumne Hierarchy structure, BVH.
+</short_description>
+
+###  Live Demo Here:
+<live_link></live_link>
+
+<github_link>https://github.com/OnyebuchiDeji/Raytracing_Polygons_Pypy</github_link>
+
+<references></references>
+
+
+<long_description>
+<h5>Date: 29-06-2026</h5>
+<h5>Author: Ebenezer Ayo, Oneybuchi.</h5>
+<h1>Raytracing Polygons - Python Moderngl</h1>
+<ul>
+<li>
+<p>Demonstrates rendering of polygons using raytracing and the optimization using a Bounding Volumne Hierarchy structure, BVH.</p>
+</li>
+<li>
+<p>The use of a Bounding Volumne Hierarchy significantly improves performance by drastically reducing the number of ray-triangle misses during the calculation for intersection between the ray and the triangles of the Polygon Mesh.</p>
+<ul>
+<li>This is possible as the BVH structure pre-partitions the rendering space into equal parts recursively. </li>
+<li>When a ray is fired, what outer partitions it hits is tested, and then is tested against the subdivided partitions within that outer partition, and so on. Therefore the ray intersection is only for the outer most, reducing checking the whole screen space everytime. If it doesn't fall within the first outer bounding partition, it goes to the next, skipping that whole screen search space early. This is what reduces the overhead.</li>
+</ul>
+</li>
+</ul>
+  
+<h3>Key Features</h3>
+<ul>
+<li>GPU-accelerated rendering using the rendering pipeline.</li>
+<li>SDF raytracing for visualising Polygon Meshes</li>
+<li>Performance improvement using Bounding Volume Hierarchy structure.</li>
+<li>Use of strucutres like SSBOs- (Shader Storage Buffer Objects) to send the Polygon triangle data to GPU.</li>
+</ul>
+<h3>Tech Stack</h3>
+<ul>
+<li>Python, Moderngl, Pygame, PyGLM</li>
+</ul>
+<hr />
+<h3>Setup Instruction</h3>
+<blockquote>
+<p>Install Python
+  Install Pip
+  Install Make either by msys64, on wsl, or Linux environment
+1.  Create &amp; Activate Environment:
+    -   <code>python -m venv .venv</code>
+    -   <code>.venv\Scripts\activate.bat</code>
+2.  Install Dependencies:
+    -   <code>pip install -r requirements.txt</code>
+3.  Run (in root directory):
+    -   <code>make</code> or <code>make app</code>
+    +   Or Run using Python if can't install Make:
+    -   <code>python src/main.py</code></p>
+</blockquote>
+<hr />
+
+</long_description>
+
+<features>web app, php</features>
