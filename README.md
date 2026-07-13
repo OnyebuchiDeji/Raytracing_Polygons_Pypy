@@ -1,6 +1,6 @@
 #####	Date: 29-06-2026
 
-#####	Author: Ebenezer Ayo, Oneybuchi.
+#####	Author: Ebenezer Ayo, Onyebuchi.
 
 #	Raytracing Polygons - Python Moderngl
 
