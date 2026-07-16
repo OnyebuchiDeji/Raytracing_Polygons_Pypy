@@ -36,7 +36,7 @@ class FPSCamera:
 		self.yaw += rel_x * SENSITIVITY
 		self.pitch -= rel_y * SENSITIVITY
 		##  Limiting pitch movement to prevent unnatural movements up and down from Gimbal Lock
-        self.pitch = max(-89, min(89, self.pitch))
+		self.pitch = max(-89, min(89, self.pitch))
 
 		# self.rot_mag = max(0, self.rot_mag - self.rot_mag * dt)
 

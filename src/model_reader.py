@@ -169,8 +169,8 @@ class Mesh:
 						f"Error: {str(e)}"
 					))
 
-		# print("No. of Polygons: ", len(self.vertex_indices) // 3)
-		# print("No. of Vertices: ", len(self.vertices) // 3)
+		print("No. of Polygons: ", len(self.vertex_indices) // 3)
+		print("No. of Vertices: ", len(self.vertices) // 3)
 
 
 
