@@ -72,6 +72,7 @@ class Mesh:
 				try:
 					output_line = line
 					if line.startswith('v '):
+						print(line)
 						# the + [1] pads the vertices with an extra w component for suitability
 						# with GPU SSBO memory layout compliance.
 						line_parts = list(map(float, clean_line_parts_array(line)[1:])) + [1]
@@ -170,7 +171,8 @@ class Mesh:
 					))
 
 		print("No. of Polygons: ", len(self.vertex_indices) // 3)
-		print("No. of Vertices: ", len(self.vertices) // 3)
+		# // 4 because each vertex has 4 components; x, y, z, w --- w being the extra 
+		print("No. of Vertices: ", len(self.vertices) // 4)
 
 
 
