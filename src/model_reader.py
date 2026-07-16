@@ -170,9 +170,9 @@ class Mesh:
 						f"Error: {str(e)}"
 					))
 
-		print("No. of Polygons: ", len(self.vertex_indices) // 3)
+		# print("No. of Polygons: ", len(self.vertex_indices) // 3)
 		# // 4 because each vertex has 4 components; x, y, z, w --- w being the extra 
-		print("No. of Vertices: ", len(self.vertices) // 4)
+		# print("No. of Vertices: ", len(self.vertices) // 4)
 
 
 
