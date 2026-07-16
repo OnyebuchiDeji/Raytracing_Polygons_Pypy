@@ -70,9 +70,11 @@ class FPSCamera:
 		#	zoom-in, zoom-out
 		if keys[pg.K_i]:
 			self.fov -= SPEED
+			self.fov = glm.clamp(FOV, 1.0f, 120.0f); # Prevent FOV inversion or extreme values
 			self.fov_tangent = glm.tan(glm.radians(self.fov/2.0))
 		if keys[pg.K_o]:
 			self.fov += SPEED
+			self.fov = glm.clamp(FOV, 1.0f, 120.0f); # Prevent FOV inversion or extreme values
 			self.fov_tangent = glm.tan(glm.radians(self.fov/2.0))
 		# print("Position: ", self.position)
 
