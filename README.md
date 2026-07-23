@@ -26,6 +26,11 @@
 
 +	Python, Moderngl, Pygame, PyGLM
 
+### References
+#####For Inspiration and Understanding
++ The Cherno (YouTube)
++ GetIntoGameDev (YouTube)
+
 ---
 
 
