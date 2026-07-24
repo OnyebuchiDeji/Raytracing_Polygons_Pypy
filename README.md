@@ -9,6 +9,7 @@
 +	The use of a Bounding Volumne Hierarchy significantly improves performance by drastically reducing the number of ray-triangle misses during the calculation for intersection between the ray and the triangles of the Polygon Mesh.
 	-	This is possible as the BVH structure pre-partitions the rendering space into equal parts recursively. 
 	-	When a ray is fired, what outer partitions it hits is tested, and then is tested against the subdivided partitions within that outer partition, and so on. Therefore the ray intersection is only for the outer most, reducing checking the whole screen space everytime. If it doesn't fall within the first outer bounding partition, it goes to the next, skipping that whole screen search space early. This is what reduces the overhead.
+	-	Beforehand to the BVH traversal, it utilizes the 3D DDA method to determine the starting distance along the ray as well as the furthest.
 
 
 ### Github Repo:
