@@ -90,6 +90,30 @@ class Program5(Program):
 					'frag': "program5.frag",
 					'model': "baryonx.obj"
 				},
+				{
+					'subtitle': "Raytracing 3D Model of Axis with Triangles Only",
+					'vert': "program5.vert",
+					'frag': "program5.frag",
+					'model': "axis.obj"
+				},
+				{
+					'subtitle': "Raytracing 3D Model of Mountains with Triangles Only",
+					'vert': "program5.vert",
+					'frag': "program5.frag",
+					'model': "mountains.obj"
+				},
+				{
+					'subtitle': "Raytracing 3D Model of Teapot with Triangles Only",
+					'vert': "program5.vert",
+					'frag': "program5.frag",
+					'model': "teapot.obj"
+				},
+				{
+					'subtitle': "Raytracing 3D Model of VideoShip with Triangles Only",
+					'vert': "program5.vert",
+					'frag': "program5.frag",
+					'model': "VideoShip.obj"
+				},
 			]
 		)
 

@@ -72,7 +72,7 @@ class Mesh:
 				try:
 					output_line = line
 					if line.startswith('v '):
-						print(line)
+						# print(line)
 						# the + [1] pads the vertices with an extra w component for suitability
 						# with GPU SSBO memory layout compliance.
 						line_parts = list(map(float, clean_line_parts_array(line)[1:])) + [1]
@@ -102,7 +102,23 @@ class Mesh:
 						# for instances with '607//562 608//563 609//563 610//562'
 						# where vt indices are missing, it replaces those with None
 						# it performs this check for all
-						face_list_flat = [(int(val)-1 if len(val) > 0 else None) for face_corner in line_parts for val in face_corner.split("/")]
+						# the below is dependent on the size/length of the split parts array
+						# face_list_flat = [(int(val)-1 if len(val) > 0 else None) for face_corner in line_parts for val in face_corner.split("/")]
+						face_list_flat = []
+
+						# The below change is to ensure that 3D models with faces of without 1/1/1 2/2/2 3/3/3 but rather just 1 2 3:
+						# For the missing face parts, use None 
+						# parts = [face_corner.split("/") for face_corner in line_parts]
+						for face_corner in line_parts:
+							parts = face_corner.split("/")
+							for iidx in range(3):
+								val = None
+								# for faces/face_corner/face_values like: "f 6 5 4", that have no '/'
+								# the below makes the missing parts be filled with None
+								if iidx == 0 or iidx % len(parts) != 0:
+									if len(parts[iidx]) > 0:
+										val = int(parts[iidx]) - 1
+								face_list_flat.append(val)
 
 						flat_vertex_indices  = face_list_flat[0::3]
 						flat_texture_indices = face_list_flat[1::3]

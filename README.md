@@ -114,5 +114,10 @@ Raytracing_Polygons_Pypy/
 ![image8](./_scrnshots/scrnshot8.png)
 ![image9](./_scrnshots/scrnshot9.png)
 ![image10](./_scrnshots/scrnshot10.png)
+![image11](./_scrnshots/scrnshot11.png)
+![image12](./_scrnshots/scrnshot12.png)
+![image13](./_scrnshots/scrnshot13.png)
+![image14](./_scrnshots/scrnshot14.png)
+![image15](./_scrnshots/scrnshot15.png)
 
 ---
